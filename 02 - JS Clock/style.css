@@ -1,0 +1,89 @@
+html {
+    background: #018DED;
+    font-family: 'helvetica neue';
+    text-align: center;
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    min-height: 100vh;
+    
+    align-items: center;
+}
+
+header {
+    color: aliceblue;
+}
+
+.clock {
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid white;
+    border-radius: 50%;
+    margin: 50px auto;
+    padding: 2rem;
+    box-shadow: 
+        0 0 0 4px rgba(0, 0, 0, 0.1),
+        inset 0 0 3px #EFEFEF,
+        inset 0 0 10px black,
+        0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px)
+}
+
+.hand {
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%; /* Set the base pivot point to Center */
+    transition: all 0.05s;
+    transform: rotate(90deg); /* Set the clock at 00:00 Hrs */
+}
+
+.second-hand {
+    width: 50%;
+    transition-timing-function: cubic-bezier(.42,0,0,2.97);
+}
+
+.min-hand {
+    left: 5%;
+    width: 45%;
+    transition-timing-function: cubic-bezier(.42,0,0,2.97);
+}
+
+.hour-hand {
+    left: 25%;
+    width: 25%;
+    transition-timing-function: cubic-bezier(.42,0,0,2.97);
+}
+
+
+@media screen and (max-width: 350px) {
+
+    header {
+        font-size: small;
+    }
+
+    .clock {
+        width: 10rem;
+        height: 10rem;
+        border: 10px solid white;
+    }
+
+    .hand {
+        height: 4px;
+    }
+}
+
+
