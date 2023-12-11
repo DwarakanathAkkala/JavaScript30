@@ -90,6 +90,9 @@
     // Handle Transition End Event
     keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 
+    // Handle Click event for Mobile
+    // keys.forEach(key => addEventListener('click', handleCursorClick));
+
     function removeTransition(e) {
 
       // Skip function if it is not a transform

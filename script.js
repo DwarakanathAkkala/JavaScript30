@@ -14,7 +14,7 @@ const data = [
     {
         title: "Scope CSS variables",
         subtitle: "Update CSS variables with JS",
-        image: './02 - JS Clock/design.png',
+        image: './03 - Update CSS variable using JS/design.png',
         link: './03 - Update CSS variable using JS/'
     },
 ];
