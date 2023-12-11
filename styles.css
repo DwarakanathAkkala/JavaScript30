@@ -145,7 +145,7 @@ footer {
     }
 
     img {
-        height: 12rem;
+        height: 9rem;
     }
 
     h5 {
@@ -180,7 +180,7 @@ footer {
 
     .footer_copy {
         text-align: start;
-        font-size: 0.75rem;
+        font-size: 0.65rem;
     }
 }
 
