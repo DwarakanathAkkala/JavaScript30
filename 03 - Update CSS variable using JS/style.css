@@ -1,0 +1,32 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --base : #ffc600;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+body {
+    text-align: center;
+    background: #193549;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.controls {
+    margin-bottom: 2rem;
+}
+
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+}
+
+.highlight {
+    color: var(--base);
+}

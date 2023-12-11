@@ -11,6 +11,12 @@ const data = [
         image: './02 - JS Clock/design.png',
         link: './02 - JS Clock/'
     },
+    {
+        title: "Scope CSS variables",
+        subtitle: "Update CSS variables with JS",
+        image: './02 - JS Clock/design.png',
+        link: './03 - Update CSS variable using JS/'
+    },
 ];
 
 const section = document.querySelector('.projects');
